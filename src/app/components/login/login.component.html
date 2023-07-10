@@ -1,0 +1,27 @@
+<style>
+    input {
+        font-family: Arial, FontAwesome
+    }
+</style>
+
+<div class="cont">
+    <div class="log">
+        <form action="/action_page.php">
+            <h1>Login</h1>
+
+            <div class="mb-3 mt-3">
+                <input type="email" class="form-control" id="email" placeholder="&#xf0e0;   Correo Electronico"
+                    name="email">
+            </div>
+
+            <div class="mb-3">
+                <input type="password" class="form-control" id="pwd" placeholder="&#xf084;   Contraseña" name="pswd">
+            </div>
+
+            <button type="submit" class="btn btn-secondary" routerLink="/cargar-act">Login</button>
+
+            <p>Al registrarse, aceptas nuestras Condiciones de uso y Politica de privacidad.</p>
+            <p>¿No tienes cuenta?<a href="/registro"><strong> Registrate</strong></a></p>
+        </form>
+    </div>
+</div>

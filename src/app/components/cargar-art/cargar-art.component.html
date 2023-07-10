@@ -1,0 +1,43 @@
+<style>
+    input,
+    select,
+    textarea {
+        font-family: Arial, FontAwesome
+    }
+</style>
+
+<div class="cont">
+    <div class="log">
+        <form action="/action_page.php">
+            <h1>Cargar Articulo</h1>
+
+            <div class="mb-3 mt-3">
+                <select class="form-select" aria-label="Default select example" aria-placeholder="a">
+                    <option selected>&#xf19c;   Tipo Subsistema</option>
+                    <option value="1">&#xf19c;   Universidad Tecnologica</option>
+                    <option value="2">&#xf19c;   Universidad Politecnica</option>
+                    <option value="3">&#xf19c;   Instituto Tecnologico</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <input type="text" class="form-control" id="tit" placeholder="&#xf02d;   Titulo del Articulo">
+            </div>
+
+            <div class="mb-3">
+                <input type="text" class="form-control" id="aut" placeholder="&#xf007;   Autor">
+            </div>
+
+            <div class="mb-3">
+                <textarea class="form-control" rows="5" id="comment" name="text"
+                    placeholder="&#xf518;   Breve Resumen del Articulo"></textarea>
+            </div>
+
+            <div class="mb-3">
+                <input type="file" class="form-control" id="file" placeholder="&#xf15b;   ">
+            </div>
+
+            <button type="submit" class="btn btn-secondary" routerLink="/">Cargar Archivo</button>
+        </form>
+    </div>
+</div>
